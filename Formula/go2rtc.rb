@@ -12,7 +12,7 @@ class Go2rtc < Formula
         ENV["GOOS"] = "darwin"
         ENV["GOARCH"] = Hardware::CPU.arm? ? "arm64" : "amd64"
         ENV["CGO_ENABLED"] = "0"
-        system "go", "build", *std_go_args, "-o", bin/"go2rtc", "./..."
+        system "go", "build", "-ldflags", "-s -w", "-trimpath", "-o", "#{bin}/", "."
     end
   
     test do
