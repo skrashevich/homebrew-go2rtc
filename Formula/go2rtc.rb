@@ -1,12 +1,10 @@
-class Go2rtcAT160 < Formula
+class Go2rtc < Formula
     desc "Ultimate camera streaming application with support RTSP, RTMP, HTTP-FLV, WebRTC, MSE, HLS, MP4, MJPEG, HomeKit, FFmpeg, etc."
     homepage "https://github.com/AlexxIT/go2rtc"
     url "https://github.com/AlexxIT/go2rtc/archive/refs/tags/v1.6.0.tar.gz"
     sha256 "680abb0b6fb455a6008de635f817770e131b9994f5cb565cb8a210c99a5a5d56"
     version "1.6.0"
     license "MIT"
-
-    keg_only :versioned_formula
   
     depends_on "go" => :build
   
